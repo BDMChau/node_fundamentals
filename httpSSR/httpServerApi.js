@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
                 if (err) {
                     if (err.code === "ENOENT") {
                         //file not found
-                        res.end("<h1>404 not found</h1>")
+                        res.end("404 not found")
                     } else {
                         res.end("Have an error")
                     }
@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
                 if (err) {
                     if (err.code === "ENOENT") {
                         //file not found
-                        res.end("<h1>404 not found</h1>")
+                        res.end("404 not found")
                     } else {
                         res.end("Have an error")
                     }
@@ -51,7 +51,7 @@ const server = http.createServer((req, res) => {
         res.end();
 
     } else {
-        res.end("<h1>404 not found</h1>")
+        res.end("404 not found")
     }
 
 })
